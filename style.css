@@ -1,0 +1,285 @@
+:root {
+    --offWhite: rgb(230, 230, 230);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+
+a {
+    color: inherit;
+} 
+
+/* ================================================ */
+
+header {
+    background-color: #939B62;
+    min-height: 40px;
+    padding: 0.2rem 1rem;
+    color: var(--offWhite)
+}
+
+header>nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header__logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.header__logo__img {
+    width: 2rem;
+}
+
+/* ================================================ */
+
+.hero {
+    background-color: #F8C4B4;
+    min-height: 200px;
+    padding: 2rem;
+    font-family: Fantasy;
+}
+
+.hero>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ================================================ */
+
+.breaker {
+    min-height: 200px;
+    height: fit-content;
+    position: relative;
+}
+
+.breaker>h1 {
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    width: fit-content;
+    margin: 0;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.breaker>video {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    opacity: 100%;
+    display: block;
+}  
+
+/* ================================================ */
+
+.secondary {
+    background-color: rgb(255, 213, 111);
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary__text {
+    margin: 2rem;
+}
+
+.secondary h1 {
+    margin: 0;
+}
+
+.popular-options {
+    background-color: #FFD56F;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .image-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+  }
+  
+  .slide {
+    flex: 1 0 300px;
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .slide:last-of-type {
+    margin-right: 0;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #666;
+    text-decoration: none;
+    z-index: 1;
+  }
+  
+  .arrow-left {
+    left: 0;
+  }
+  
+  .arrow-right {
+    right: 0;
+  }
+  
+  .arrow-right:hover,
+  .arrow-left:hover {
+    color: #333;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    margin-top: 10px;
+  }
+
+/* .secondary img {
+    width: 50%;
+} 
+
+/* ================================================ */
+
+.tertiary {
+    background-color: #939B62;
+    min-height: 200px;
+    padding: 2rem;
+ }
+ 
+ .tertiary>h2{
+    font-family: Fantasy;
+ }
+ 
+ .tertiary__products {
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ 
+ .tertiary__article {
+    min-height: 200px;
+    min-width: 30%;
+    max-width: 300px;
+    font-family: Fantasy;
+    border: 3px rgba(0, 0, 0, 0.4) solid;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+ }
+ 
+ 
+ .tertiary__article img {
+    height: 200px;
+    object-fit: contain;
+ }
+
+ .ter-pic-container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+    background: transparent;
+    height: 100%;
+    border-radius:15px;
+ }
+
+ .ter-pic-row{
+    display:inline-block;
+  }
+
+.ter-pic-row img{
+    margin-right:22px;
+}
+ 
+ .tertiary__text {
+    padding: 1rem;
+ }
+ 
+ 
+ .tertiary__article button {
+    width: 50%;
+ }
+
+
+/* ================================================ */
+
+footer {
+    background-color: #FFB26B;
+    color: var(--offWhite);
+    min-height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 2rem;
+}
+
+.footer__info>h2,
+h3 {
+    padding-top: 0.5rem;
+}
+
+.footer__est {
+    color: peachpuff
+}
+
+.footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__links>li {
+    padding-top: 0.5rem;
+}
+
+.footer__logo {
+    grid-column: 4;
+    height: 100px;
+    margin-left: auto;
+}  
